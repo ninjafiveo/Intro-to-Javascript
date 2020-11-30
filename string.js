@@ -10,3 +10,10 @@ console.log("Your name is "+name);
 console.log("x + y = " + x+y);
 console.log("x + y = " + parseInt(x+y));
 console.log("x + y = " + "Ninja");
+
+alert("Hello, what is your name?");
+name = prompt("Please input your name: ");
+alert("Welcome " + name + ". It is great to see you today.");
+console.log("Your name is now: " + name);
+console.log('Your name is now: ' + name);
+console.log(`Your name is now: ${name} `);
