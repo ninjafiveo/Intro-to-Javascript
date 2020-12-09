@@ -1,4 +1,4 @@
-/// Notes
+/// Notes #12/9/2020
 /// https://www.w3schools.com/jsref/met_document_getelementbyid.asp
 /// https://www.w3schools.com/jsref/dom_obj_document.asp
 
