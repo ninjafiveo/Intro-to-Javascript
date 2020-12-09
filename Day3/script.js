@@ -3,7 +3,7 @@
 /// https://www.w3schools.com/jsref/dom_obj_document.asp
 
 
-document.getElementById("pageTitle").innerHTML = "Welcome to Ninjaing 101";
+document.getElementById("pageTitle").innerHTML = "Welcome to Ninja Coding 101";
 // numbOne = document.getElementById("numberOne").value;
 
 function theAnswer(){
