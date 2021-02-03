@@ -67,16 +67,23 @@ console.log("Smith's pet's name is "+smithsPet.aName+". "+smithsPet.aName+" is "
 
 
 
-function Horse(name, color) {
-  this.name = name;
+function Dog(ownersName, dogsName, color) {
+  this.ownersName = ownersName;
+  this.dogsName = dogsName;
   this.color = color;
   this.numLegs = 4;
 }
 
-let terrier = new Horse("Mr. Ed", "Blue");
+let terrier = new Dog("Bob","Fluffy", "Brown");
+let retriever = new Dog("Michael","Chloe", "Tan");
 
-console.log(hound);
 console.log(terrier);
+console.log(retriever);
+
+console.log(terrier.ownersName + " has a "+ terrier.color +" dog named "+terrier.dogsName + ".")
+console.log(retriever.ownersName + " has a "+ retriever.color +" dog named "+retriever.dogsName + ".")
+
+
 
 
 function House(numBedrooms) {
