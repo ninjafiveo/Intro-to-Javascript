@@ -4,8 +4,9 @@ playerScore = 0
 console.log("The player Score is: "+playerScore);
 
 var masterTime;
+var highScore = 0;
 
-
+//#region TIMER COUNTDOWN
 function startTimerFunction(){
     function getTimeRemaining(endtime) {
         const total = Date.parse(endtime) - Date.parse(new Date());
@@ -42,10 +43,10 @@ function startTimerFunction(){
           masterTime
       };
 };
+//#endregion
 
 //#region playerScore Increment
       function scoreFunction(){
-
             if(masterTime < 15 && masterTime > 0){
                 ++playerScore;
                 document.getElementById("playerClicks").innerHTML = playerScore;
@@ -55,7 +56,11 @@ function startTimerFunction(){
                 if(playerScore > 0){
                     playerFinalScore = playerScore;
                 };
+                if(playerFinalScore > highScore){
+                    highScore = playerFinalScore;
+                    document.getElementById("highScore").innerHTML = highScore;
 
+                };
                 alert("Your Score is " + playerFinalScore+". To play again, click the Start Timer Button.");   
             }
             if(masterTime <=0){
