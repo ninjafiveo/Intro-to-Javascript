@@ -67,9 +67,27 @@ function startTimerFunction(){
                 playerScore = 0;
             }
     };
+
+    
 //#endregion
 
+//#region Sleep
+function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
+}
 
+// console.log("Hello");
+// sleep(3000);
+// console.log("World!");
+// sleep(3000);
+// console.log("World!");
+
+
+//#endregion
 
 
 
